@@ -8,13 +8,13 @@ from PIL import Image
 import torch
 from transformers import CLIPProcessor, CLIPModel
 
-from src.nutrition import load_nutrition_db, fuzzy_lookup, get_nutrition_for, scale_per_serving
+from src.nutrition import load_nutrition_db, get_nutrition_for, scale_per_serving
 
 st.set_page_config(page_title="Food Nutrition Detector", page_icon="🍽️", layout="wide")
 
 # ---- Paths ----
 DB_PATH = os.path.join("data", "nutrition_db.csv")
-SAMPLE_IMG = os.path.join("assets", "sample.jpg")
+SAMPLE_IMG = os.path.join("assets", "sample.jpeg")
 
 @st.cache_resource(show_spinner=True)
 def load_clip():
@@ -70,19 +70,9 @@ with colR:
         st.write(f"- {name} — **{p*100:.1f}%**")
 
     st.divider()
-    st.subheader("3) Confirm or search dish")
+    st.subheader("3) Select dish")
     default_choice = top_items[0][0] if top_items else ""
-    selected_name = st.selectbox("Choose the dish (or type to search):", options=labels, index=labels.index(default_choice) if default_choice in labels else 0)
-    manual = st.text_input("Or type a custom name (we'll try fuzzy match):", "")
-
-    final_name = selected_name
-    if manual.strip():
-        final_name = manual.strip()
-        matches = fuzzy_lookup(final_name, df, limit=5)
-        best = matches[0] if matches else None
-        if best:
-            st.info(f"Closest match: **{best[0]}** (similarity {best[1]:.0f})")
-            final_name = best[0]
+    final_name = st.selectbox("Choose the dish:", options=labels, index=labels.index(default_choice) if default_choice in labels else 0)
 
     st.divider()
     st.subheader("4) Portion size")
@@ -111,7 +101,7 @@ with colR:
                 st.warning("Nothing to export.")
             else:
                 out_df = pd.DataFrame([{
-                    "image_file": up.name if up else "sample.jpg",
+                    "image_file": up.name if up else "sample.jpeg",
                     "predicted_food": final_name,
                     "portion_g": grams,
                     **per_serving
