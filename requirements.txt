@@ -9,6 +9,6 @@ sentencepiece>=0.2.0
 streamlit>=1.37.0
 Pillow>=10.3.0
 pandas>=2.2.2
-numpy>=1.26.4
+numpy<2.0.0,>=1.24.0
 scikit-learn>=1.5.2
 rapidfuzz>=3.9.6
