@@ -1,0 +1,61 @@
+food_name,calories_kcal_100g,protein_g_100g,fat_g_100g,carbs_g_100g,category
+nasi goreng,215,5.0,6.0,35.0,indonesian
+rendang,231,17.0,17.0,3.0,indonesian
+sate ayam,200,16.0,12.0,6.0,indonesian
+soto ayam,95,8.0,5.0,5.0,indonesian
+gado gado,140,6.0,9.0,11.0,indonesian
+bakso,120,10.0,6.0,6.0,indonesian
+mie goreng,220,6.0,8.0,32.0,indonesian
+nasi uduk,200,3.0,6.0,33.0,indonesian
+ayam goreng,240,22.0,15.0,8.0,indonesian
+ikan bakar,150,22.0,5.0,0.0,indonesian
+tempe goreng,190,14.0,11.0,10.0,indonesian
+tahu goreng,160,12.0,10.0,6.0,indonesian
+siomay,140,9.0,6.0,13.0,indonesian
+nasi padang (umum),185,7.0,8.0,22.0,indonesian
+soto betawi,130,9.0,9.0,4.0,indonesian
+rawon,110,9.0,6.0,6.0,indonesian
+nasi kuning,190,4.0,6.0,31.0,indonesian
+pempek,170,9.0,6.0,23.0,indonesian
+opor ayam,160,12.0,11.0,5.0,indonesian
+sayur lodeh,90,3.0,6.0,7.0,indonesian
+sate padang,210,18.0,12.0,7.0,indonesian
+soto mie,130,7.0,6.0,13.0,indonesian
+bakmi ayam,190,9.0,6.0,28.0,indonesian
+nasi campur,180,7.0,6.0,27.0,indonesian
+nasi liwet,190,5.0,5.0,32.0,indonesian
+pizza margherita,250,11.0,9.0,31.0,western
+hamburger,263,14.0,12.0,26.0,western
+french fries,312,3.4,15.0,41.0,western
+fried chicken,260,20.0,16.0,8.0,western
+spaghetti bolognese,160,8.0,6.0,20.0,western
+caesar salad,180,8.0,12.0,10.0,western
+steak,250,26.0,17.0,0.0,western
+grilled salmon,208,22.0,13.0,0.0,western
+pancakes,227,6.0,10.0,29.0,western
+chocolate cake,389,5.0,18.0,55.0,western
+sandwich,230,9.0,8.0,30.0,western
+sushi,145,8.0,4.0,22.0,asian
+ramen,180,7.0,6.0,26.0,asian
+udon,135,5.0,1.0,28.0,asian
+tempura,198,8.0,12.0,16.0,asian
+pad thai,196,8.0,8.0,24.0,asian
+fried rice,210,5.0,6.0,35.0,asian
+pho,90,7.0,3.0,10.0,asian
+dumplings,170,7.0,7.0,20.0,asian
+bibimbap,160,7.0,6.0,21.0,asian
+kimchi fried rice,210,5.0,7.0,33.0,asian
+kebab,230,15.0,12.0,16.0,middle eastern
+falafel,333,13.0,17.0,31.0,middle eastern
+hummus,166,8.0,10.0,14.0,middle eastern
+shawarma,215,15.0,11.0,14.0,middle eastern
+greek salad,95,2.0,7.0,7.0,mediterranean
+tacos,226,9.0,12.0,20.0,mexican
+burrito,217,9.0,8.0,28.0,mexican
+nachos,290,8.0,16.0,30.0,mexican
+paella,158,9.0,4.0,23.0,mediterranean
+fried tofu,140,14.0,8.0,3.0,vegan
+grilled vegetables,80,3.0,4.0,9.0,vegan
+salad bowl,100,3.0,5.0,12.0,vegan
+avocado toast,220,5.0,14.0,18.0,vegan
+fruit salad,60,1.0,0.4,14.0,vegan
